@@ -18,8 +18,9 @@ main{
     display: grid;
     grid-template-rows: 20% auto;
     width: 30rem;
-    height: 35rem;
+    height: 40rem;
     border-radius: 20px;
+    
 }
 
 .main-balance{
@@ -28,7 +29,7 @@ main{
     padding-left: 2rem;
     padding-right: 2rem;
     align-items: center;
-    background-color: red;
+    background-color:  hsl(10, 79%, 65%);
     border-radius: 20px;
     justify-content: space-between;
 }
@@ -46,35 +47,65 @@ main{
 .main-spending{
     margin-top: 20px;
     border-radius: 20px;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     padding: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
+
+    background-color: white;
+    border: 1px solid black;
 }
 
 .main-spending-stats{
-    background-color: rebeccapurple;
     height: 70%;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto;
-    /* display: flex; */
-    /* flex-direction; */
-    /* flex-flow: end; */
+    align-items: flex-end;
 }
 
 .main-spending-detail{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 1.5rem;
+}
+
+.main-spending-datail-2{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    /* background-color: rebeccapurple; */
 }
 
 .main-box{
     background-color: green;
-    /* margin: '10px' */
-    /* padding: 2rem; */
-
+    cursor: pointer;
 }
 
-.main-box:hover{
+.boxContainer{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+/* .main-box:hover{
     background-color: black;
+} */
+.boxPrice{
+
+    visibility: hidden;
+    margin: auto;
+    padding: 5px;
+    background-color: rebeccapurple;
+    /* width: 70%; */
+    border-radius: 5px;
+    color: white;
+}
+
+
+.boxPrice-active{
+    /* background-color: royalblue; */
+    visibility: visible;
 }
