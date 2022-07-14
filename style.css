@@ -11,73 +11,94 @@
 body{
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    background-color: #f7e9dc;
     justify-content: center;
     align-items: center;
-    background-color: #f7e9dc;
-    font-family: 'DM Sans', sans-serif;
+    font-size:  18px;
 }
 
 main{
-    display: grid;
-    grid-template-rows: 20% auto;
-    width: 29rem;
-    height: 38rem;
     border-radius: 20px;
-    
-}
-
-hr{
-    height:1px;
-    opacity: 50%;
-    margin-top: 1.5rem;
-    background-color: rebeccapurple;
+ 
+    font-size: 0.9rem;
+    height: 70vh;
+    width: 36%;
+    display: grid;
+    grid-template-rows: 17% auto
 }
 
 .main-balance{
+    background-color: green;
     display: flex;
-    padding: 1.5rem;
+    background-color:  hsl(10, 79%, 65%);
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-between;
+    /* border-radius: 5px; */
     padding-left: 2rem;
     padding-right: 2rem;
-    align-items: center;
-    background-color:  hsl(10, 79%, 65%);
-    border-radius: 20px;
-    justify-content: space-between;
-    color: white;
-    line-height: 2.3rem;
 }
-
 .main-balance-logo{
-    /* original svg logo size */
-    height: 48px;
-    width: 72px;
-    background-image: url('./images/logo.svg');
+    width:72px;
+    height:48px;
+    background-image: url("./images/logo.svg");
     background-size: cover;
-    background-repeat: no-repeat;
 }
-
 
 .main-spending{
-    margin-top: 20px;
-    border-radius: 20px;
-    /* background-color: yellowgreen; */
-    padding: 1rem;
+    margin-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
     background-color: #fffcf7;
-    /* background-color: white; */
-    /* border: 1px solid black; */
+    border-radius: 15px;
+}
+
+.main-spending-title{
+    /* font-size: 1.5rem; */
+    padding-top: 2rem;
 }
 
 .main-spending-stats{
-    height: 60%;
+    /* background-color: rebeccapurple; */
+    height: 50%;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(7, auto);
     align-items: flex-end;
     text-align: center;
-    /* margin: 4rem; */
+    
+}
+
+.main-box{
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-box:hover{
+    opacity: 80%;
+}
+
+.boxPrice{
+    visibility: hidden;
+    color: white;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.boxPrice-active{
+    visibility: visible;
+    font-size: 0.9rem;
+    width: auto;
+    background-color: hsl(25, 47%, 15%);
+    margin-bottom: 1rem;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 3px;
+    color: white;
 }
 
 .main-review{
@@ -85,12 +106,9 @@ hr{
     justify-content: space-between;
     align-items: center;
     margin-top: 1.5rem;
-    /* padding-bottom: 2rem; */
-    /* background-color: rebeccapurple; */
 }
-
 .main-review-current h1{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .main-review-current p{
@@ -105,48 +123,118 @@ hr{
 }
 
 .main-review-past span {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 700;
 }
 .main-review-past p {
     opacity: 80%;
 }
 
+/* //////////////////////////////////////////////////////////////// */
+@media screen and (max-width: 600px){
+    main{
+        font-size: 0.9rem;
+        height: 80vh;
+        width: 90%;
+        display: grid;
+        grid-template-rows: 17% auto
+    }
 
+    .main-spending-title{
+        /* padding:0x`; */
+        font-size: 1.5rem;
+    }
 
-.main-box{
-    background-color: hsl(10, 79%, 65%);
-    border-radius: 5px;
-    cursor: pointer;
-}
+    .main-balance{
+        background-color: green;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .main-balance-logo{
+        width:72px;
+        height:48px;
+        background-image: url("./images/logo.svg");
+        background-size: cover;
+    }
+    
+    .main-spending{
+        margin-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
-.main-box:hover{
-    opacity: 80%;
-}
+    .main-spending-stats{
+        /* background-color: rebeccapurple; */
+        height: 50%;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(7, auto);
+        align-items: flex-end;
+        text-align: center;
+        
+    }
 
+    .main-box{
+        background-color: hsl(10, 79%, 65%);
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-.boxPrice{
-    visibility: hidden;
-    font-size: 1.1rem;
-    padding-left: 4px;
-    padding-right: 4px;
-}
+    .main-box:hover{
+        opacity: 80%;
+    }
 
-
-.boxPrice-active{
-    visibility: visible;
-    font-size: 1.1rem;
-    width: auto;
-    background-color: hsl(25, 47%, 15%);
-    margin-bottom: 1rem;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    border-radius: 3px;
-    color: white;
-}
-
-.boxPrice-highestPrice{
-     background-color: hsl(186, 34%, 60%);
+    .boxPrice{
+        visibility: hidden;
+        color: white;
+        padding: 0;
+    }
+    .boxPrice-active{
+        padding: 0;
+        visibility: visible;
+        font-size: 0.9rem;
+        width: auto;
+        background-color: hsl(25, 47%, 15%);
+        /* margin-bottom: 1rem;
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-top: 4px;
+        padding-bottom: 4px; */
+        border-radius: 3px;
+        color: white;
+    }
+    .main-review{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.5rem;
+        /* padding-bottom: 2rem; */
+        /* background-color: rebeccapurple; */
+    }
+    .main-review-current h1{
+        font-size: 2rem;
+    }
+    
+    .main-review-current p{
+        opacity: 80%;
+    }
+    
+    .main-review-past{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        line-height: 1.5rem;
+    }
+    
+    .main-review-past span {
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .main-review-past p {
+        opacity: 80%;
+    }
 }

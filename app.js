@@ -16,6 +16,7 @@ function processData() {
 		// add class names and dynamic styling
 		box.className = "main-box";
 		boxAmount.className = "boxPrice";
+		boxContainer.className = 'boxContainer'
 		box.style.margin = "7px";
 		// value of amounts provides height difference 
 		box.style.height = `${(16 * element.amount) / 100}rem`;
