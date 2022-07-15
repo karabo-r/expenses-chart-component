@@ -1,5 +1,9 @@
 # Frontend Mentor - Expenses chart component solution
 
+### Links
+
+- Live Site URL: [View live demo (solution)](https://expenses-chart-component-nu.vercel.app/)
+
 This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
@@ -7,7 +11,6 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -33,10 +36,6 @@ Users should be able to:
 
 ![](./images/screenshot.jpeg)
 
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -71,7 +70,7 @@ I would like to improve on how I write my javscript logic and it's structure, di
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@karabo-r](https://www.frontendmentor.io/profile/karabo-r)
 - Twitter - [@karabo_dev](https://twitter.com/karabo_dev)
 
 
