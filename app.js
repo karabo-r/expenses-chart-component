@@ -40,7 +40,7 @@ function processData() {
 }
 
 function appendData(dataStore) {
-	// map returned array in param to parent div in HTML
+	// reset and map returned array in param to parent div in HTML
 	statsContainer.replaceChildren('')
 	dataStore.map((item) => statsContainer.append(item));
 }
