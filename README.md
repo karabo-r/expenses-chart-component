@@ -70,7 +70,7 @@ I would like to improve on how I write my javscript logic and it's structure, di
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@karabo-r](https://www.frontendmentor.io/profile/karabo-r)
 - Twitter - [@karabo_dev](https://twitter.com/karabo_dev)
 
 
