@@ -67,7 +67,12 @@ main{
     text-align: center;
     align-items: flex-end;
     grid-template-columns: repeat(7, auto);
-    
+}
+
+.main-spending-stats h1{
+    top: -50%;
+    right: -50%;
+    position: relative;
 }
 
 .main-box{
@@ -142,6 +147,10 @@ main{
 
     .main-spending-title{
         font-size: 1.5rem;
+    }
+
+    .main-spending-stats h1{
+        visibility: hidden;
     }
 
     .boxPrice{
