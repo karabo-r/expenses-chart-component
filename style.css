@@ -8,233 +8,153 @@
     box-sizing: border-box;
 }
 
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
 body{
     height: 100vh;
-    display: flex;
-    background-color: #f7e9dc;
-    justify-content: center;
-    align-items: center;
     font-size:  18px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7e9dc;
+    font-family: 'DM Sans', sans-serif;
 }
 
 main{
-    border-radius: 20px;
- 
+    width: 35%;
+    height: 68vh;
     font-size: 0.9rem;
-    height: 70vh;
-    width: 36%;
-    display: grid;
     grid-template-rows: 17% auto
 }
 
-.main-balance{
-    background-color: green;
-    display: flex;
-    background-color:  hsl(10, 79%, 65%);
+.main-balance,
+.main-spending{
+    padding: 0 2rem;
     border-radius: 15px;
+}
+
+.main-balance{
+    color: #fffcf7;
     align-items: center;
     justify-content: space-between;
-    /* border-radius: 5px; */
-    padding-left: 2rem;
-    padding-right: 2rem;
+    background-color:  hsl(10, 79%, 65%);
 }
+
 .main-balance-logo{
     width:72px;
     height:48px;
-    background-image: url("./images/logo.svg");
     background-size: cover;
+    background-image: url("./images/logo.svg");
 }
 
 .main-spending{
     margin-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
     background-color: #fffcf7;
-    border-radius: 15px;
 }
 
 .main-spending-title{
-    /* font-size: 1.5rem; */
     padding-top: 2rem;
 }
 
 .main-spending-stats{
-    /* background-color: rebeccapurple; */
     height: 50%;
     margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(7, auto);
-    align-items: flex-end;
     text-align: center;
+    align-items: flex-end;
+    grid-template-columns: repeat(7, auto);
     
 }
 
 .main-box{
-    background-color: hsl(10, 79%, 65%);
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 5px;
+    background-color: hsl(10, 79%, 65%);
 }
 
 .main-box:hover{
     opacity: 80%;
 }
 
+.boxPrice,
+.boxPrice-active{
+    padding: 4px;
+}
+
 .boxPrice{
     visibility: hidden;
-    color: white;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
 }
+
 .boxPrice-active{
     visibility: visible;
-    font-size: 0.9rem;
-    width: auto;
-    background-color: hsl(25, 47%, 15%);
-    margin-bottom: 1rem;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    border-radius: 3px;
     color: white;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    background-color: hsl(25, 47%, 15%);
 }
 
 .main-review{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-top: 1.5rem;
-}
-.main-review-current h1{
-    font-size: 2rem;
+    justify-content: space-between;
 }
 
+.main-review-current h1{
+    font-size: 3rem;
+}
 .main-review-current p{
     opacity: 80%;
 }
 
 .main-review-past{
-    display: flex;
+    line-height: 1.5rem;
     align-items: flex-end;
     flex-direction: column;
-    line-height: 1.5rem;
 }
 
 .main-review-past span {
     font-size: 17px;
     font-weight: 700;
 }
+
 .main-review-past p {
     opacity: 80%;
 }
 
-/* //////////////////////////////////////////////////////////////// */
+
 @media screen and (max-width: 600px){
     main{
-        font-size: 0.9rem;
-        height: 80vh;
         width: 90%;
-        display: grid;
-        grid-template-rows: 17% auto
+        height: 80vh;
+        font-size: 0.9rem;
     }
 
-    .main-spending-title{
-        /* padding:0x`; */
-        font-size: 1.5rem;
-    }
-
-    .main-balance{
-        background-color: green;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 5px;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .main-balance-logo{
-        width:72px;
-        height:48px;
-        background-image: url("./images/logo.svg");
-        background-size: cover;
-    }
-    
     .main-spending{
         margin-top: 2rem;
         padding-left: 1rem;
         padding-right: 1rem;
     }
 
-    .main-spending-stats{
-        /* background-color: rebeccapurple; */
-        height: 50%;
-        margin-top: 2rem;
-        display: grid;
-        grid-template-columns: repeat(7, auto);
-        align-items: flex-end;
-        text-align: center;
-        
-    }
-
-    .main-box{
-        background-color: hsl(10, 79%, 65%);
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    .main-box:hover{
-        opacity: 80%;
+    .main-spending-title{
+        font-size: 1.5rem;
     }
 
     .boxPrice{
-        visibility: hidden;
-        color: white;
         padding: 0;
     }
+
     .boxPrice-active{
         padding: 0;
-        visibility: visible;
         font-size: 0.9rem;
-        width: auto;
-        background-color: hsl(25, 47%, 15%);
-        /* margin-bottom: 1rem;
-        padding-left: 4px;
-        padding-right: 4px;
-        padding-top: 4px;
-        padding-bottom: 4px; */
-        border-radius: 3px;
-        color: white;
     }
-    .main-review{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 1.5rem;
-        /* padding-bottom: 2rem; */
-        /* background-color: rebeccapurple; */
-    }
+
     .main-review-current h1{
         font-size: 2rem;
     }
     
-    .main-review-current p{
-        opacity: 80%;
-    }
-    
-    .main-review-past{
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        line-height: 1.5rem;
-    }
-    
-    .main-review-past span {
-        font-size: 17px;
-        font-weight: 700;
-    }
-    .main-review-past p {
-        opacity: 80%;
-    }
 }

@@ -19,7 +19,7 @@ function processData() {
 		boxContainer.className = 'boxContainer'
 		box.style.margin = "7px";
 		// value of amounts provides height difference 
-		box.style.height = `${(16 * element.amount) / 100}rem`;
+		box.style.height = `${(18 * element.amount) / 100}rem`;
 
 
 		// add eventListners to change class names

@@ -15,9 +15,9 @@
 		<link rel="stylesheet" href="style.css" />
 		<title>Frontend Mentor | Expenses chart component</title>
 	</head>
-	<body>
-		<main>
-			<div class="main-balance">
+	<body class="flex">
+		<main class="grid">
+			<div class="main-balance flex">
 				<div class="main-balance-review">
 					<p>My Balance</p>
 					<h1>$921.48</h1>
@@ -26,14 +26,14 @@
 			</div>
 			<div class="main-spending">
 				<h1 class="main-spending-title">Spending - Last 7 days</h1>
-				<div class="main-spending-stats" id="statsContainer"></div>
+				<div class="main-spending-stats grid" id="statsContainer"></div>
 				<hr />
-				<div class="main-review">
+				<div class="main-review flex">
 					<div class="main-review-current">
 						<p>Total this month</p>
 						<h1>$478.33</h1>
 					</div>
-					<div class="main-review-past">
+					<div class="main-review-past flex">
 						<span>+2,4%</span>
 						<p>From last month</p>
 					</div>
